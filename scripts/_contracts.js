@@ -1,4 +1,4 @@
 module.exports = {
-    governorAddress: "0x77Bb2866f2cAd614Bf6b6d7b3B18557d876C3a04",
-    tokenAddress: "0x34018446907ABBF4126FDE81DDB408F8b5315587"
+    governorAddress: "0x7Fb02CADB60f08B538828a63a60AE6378587909d",
+    tokenAddress: "0xf1a401bd1D88f8ba04Ed1c0F160764f312598fCf"
 };

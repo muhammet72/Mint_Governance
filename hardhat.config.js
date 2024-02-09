@@ -3,10 +3,6 @@ require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const GOERLI_ALCHEMY_RPC_URL = process.env.ALCHEMY_GOERLI_URL || "";
-const PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY || "0".repeat(64);
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_KEY || "";
-
 module.exports = {
   solidity: "0.8.17",
   defaultNetwork: "hardhat",
@@ -15,14 +11,13 @@ module.exports = {
       chainId: 1337,
     },
     goerli: {
-      url: GOERLI_ALCHEMY_RPC_URL,
-      accounts: [PRIVATE_KEY],
-      chainId: 5,
+      url: process.env.ALCHEMY_GOERLI_URL,
+      accounts: [process.env.GOERLI_PRIVATE_KEY],
     },
   },
   etherscan: {
     apiKey: {
-      goerli: ETHERSCAN_API_KEY,
+      apiKey: process.env.ETHERSCAN_KEY,
     },
   },
 };
