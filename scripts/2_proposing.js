@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 const { parseEther } = ethers.utils;
 const fs = require("fs");
 const { governorAddress, tokenAddress } = require("./_contracts");
-const moveBlocks = require("../utils/moveBlocks").default;
+const moveBlocks = require("../utils/moveBlocks");
 
 //  The 5 minutes that are configured in the contract deployment must have passed
 
